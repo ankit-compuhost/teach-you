@@ -1,0 +1,62 @@
+[05-Mar-2021 10:25:33 UTC] PHP Warning:  include(header1.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/sidebartrial1.php on line 192
+[05-Mar-2021 10:25:33 UTC] PHP Warning:  include(header1.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/sidebartrial1.php on line 192
+[05-Mar-2021 10:25:33 UTC] PHP Warning:  include(): Failed opening 'header1.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home2/compueaz/public_html/adminpanel/sidebartrial1.php on line 192
+[05-Mar-2021 14:50:35 UTC] PHP Warning:  include(sidebar.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/admincp.php on line 243
+[05-Mar-2021 14:50:35 UTC] PHP Warning:  include(sidebar.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/admincp.php on line 243
+[05-Mar-2021 14:50:35 UTC] PHP Warning:  include(): Failed opening 'sidebar.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home2/compueaz/public_html/adminpanel/admincp.php on line 243
+[18-Mar-2021 08:20:35 UTC] PHP Warning:  require(db.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/listpages.php on line 107
+[18-Mar-2021 08:20:35 UTC] PHP Warning:  require(db.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/listpages.php on line 107
+[18-Mar-2021 08:20:35 UTC] PHP Fatal error:  require(): Failed opening required 'db.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home2/compueaz/public_html/adminpanel/listpages.php on line 107
+[18-Mar-2021 08:20:43 UTC] PHP Warning:  require(db.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/listpages.php on line 107
+[18-Mar-2021 08:20:43 UTC] PHP Warning:  require(db.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/listpages.php on line 107
+[18-Mar-2021 08:20:43 UTC] PHP Fatal error:  require(): Failed opening required 'db.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home2/compueaz/public_html/adminpanel/listpages.php on line 107
+[18-Mar-2021 08:22:56 UTC] PHP Warning:  require(db.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/listpages.php on line 104
+[18-Mar-2021 08:22:56 UTC] PHP Warning:  require(db.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/listpages.php on line 104
+[18-Mar-2021 08:22:56 UTC] PHP Fatal error:  require(): Failed opening required 'db.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home2/compueaz/public_html/adminpanel/listpages.php on line 104
+[18-Mar-2021 08:23:00 UTC] PHP Warning:  require(db.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/listpages.php on line 104
+[18-Mar-2021 08:23:00 UTC] PHP Warning:  require(db.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/listpages.php on line 104
+[18-Mar-2021 08:23:00 UTC] PHP Fatal error:  require(): Failed opening required 'db.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home2/compueaz/public_html/adminpanel/listpages.php on line 104
+[18-Mar-2021 08:31:02 UTC] PHP Warning:  require(db.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/listpages.php on line 104
+[18-Mar-2021 08:31:02 UTC] PHP Warning:  require(db.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/listpages.php on line 104
+[18-Mar-2021 08:31:02 UTC] PHP Fatal error:  require(): Failed opening required 'db.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home2/compueaz/public_html/adminpanel/listpages.php on line 104
+[18-Mar-2021 08:31:05 UTC] PHP Warning:  require(db.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/listpages.php on line 104
+[18-Mar-2021 08:31:05 UTC] PHP Warning:  require(db.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/listpages.php on line 104
+[18-Mar-2021 08:31:05 UTC] PHP Fatal error:  require(): Failed opening required 'db.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home2/compueaz/public_html/adminpanel/listpages.php on line 104
+[18-Mar-2021 08:31:28 UTC] PHP Warning:  require(db.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/listpages.php on line 104
+[18-Mar-2021 08:31:28 UTC] PHP Warning:  require(db.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/listpages.php on line 104
+[18-Mar-2021 08:31:28 UTC] PHP Fatal error:  require(): Failed opening required 'db.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home2/compueaz/public_html/adminpanel/listpages.php on line 104
+[18-Mar-2021 10:16:34 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home2/compueaz/public_html/adminpanel/listgroups.php on line 114
+[18-Mar-2021 10:16:34 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home2/compueaz/public_html/adminpanel/listgroups.php on line 114
+[18-Mar-2021 10:16:34 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home2/compueaz/public_html/adminpanel/listgroups.php on line 114
+[18-Mar-2021 10:16:34 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home2/compueaz/public_html/adminpanel/listgroups.php on line 114
+[18-Mar-2021 10:16:43 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home2/compueaz/public_html/adminpanel/listgroups.php on line 114
+[18-Mar-2021 10:16:43 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home2/compueaz/public_html/adminpanel/listgroups.php on line 114
+[18-Mar-2021 10:16:43 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home2/compueaz/public_html/adminpanel/listgroups.php on line 114
+[18-Mar-2021 10:16:43 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home2/compueaz/public_html/adminpanel/listgroups.php on line 114
+[18-Mar-2021 10:17:22 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home2/compueaz/public_html/adminpanel/listgroups.php on line 114
+[18-Mar-2021 10:17:22 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home2/compueaz/public_html/adminpanel/listgroups.php on line 114
+[18-Mar-2021 10:30:56 UTC] PHP Warning:  require(db.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/groupcategory.php on line 97
+[18-Mar-2021 10:30:56 UTC] PHP Warning:  require(db.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/groupcategory.php on line 97
+[18-Mar-2021 10:30:56 UTC] PHP Fatal error:  require(): Failed opening required 'db.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home2/compueaz/public_html/adminpanel/groupcategory.php on line 97
+[18-Mar-2021 10:31:07 UTC] PHP Warning:  require(db.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/groupcategory.php on line 97
+[18-Mar-2021 10:31:07 UTC] PHP Warning:  require(db.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/groupcategory.php on line 97
+[18-Mar-2021 10:31:07 UTC] PHP Fatal error:  require(): Failed opening required 'db.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home2/compueaz/public_html/adminpanel/groupcategory.php on line 97
+[18-Mar-2021 11:39:37 UTC] PHP Warning:  require(db.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/listarticles.php on line 106
+[18-Mar-2021 11:39:37 UTC] PHP Warning:  require(db.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/listarticles.php on line 106
+[18-Mar-2021 11:39:37 UTC] PHP Fatal error:  require(): Failed opening required 'db.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home2/compueaz/public_html/adminpanel/listarticles.php on line 106
+[19-Mar-2021 12:21:14 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home2/compueaz/public_html/adminpanel/listarticles.php on line 167
+[19-Mar-2021 12:21:19 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home2/compueaz/public_html/adminpanel/listarticles.php on line 167
+[19-Mar-2021 12:21:31 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home2/compueaz/public_html/adminpanel/listarticles.php on line 167
+[19-Mar-2021 12:21:43 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home2/compueaz/public_html/adminpanel/listarticles.php on line 167
+[20-Mar-2021 07:16:26 UTC] PHP Warning:  include(header.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/home.php on line 21
+[20-Mar-2021 07:16:26 UTC] PHP Warning:  include(header.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/home.php on line 21
+[20-Mar-2021 07:16:26 UTC] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home2/compueaz/public_html/adminpanel/home.php on line 21
+[20-Mar-2021 07:16:26 UTC] PHP Warning:  include(sidebar.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/home.php on line 29
+[20-Mar-2021 07:16:26 UTC] PHP Warning:  include(sidebar.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/home.php on line 29
+[20-Mar-2021 07:16:26 UTC] PHP Warning:  include(): Failed opening 'sidebar.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home2/compueaz/public_html/adminpanel/home.php on line 29
+[20-Mar-2021 07:16:31 UTC] PHP Warning:  include(header.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/home.php on line 21
+[20-Mar-2021 07:16:31 UTC] PHP Warning:  include(header.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/home.php on line 21
+[20-Mar-2021 07:16:31 UTC] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home2/compueaz/public_html/adminpanel/home.php on line 21
+[20-Mar-2021 07:16:31 UTC] PHP Warning:  include(sidebar.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/home.php on line 29
+[20-Mar-2021 07:16:31 UTC] PHP Warning:  include(sidebar.php): failed to open stream: No such file or directory in /home2/compueaz/public_html/adminpanel/home.php on line 29
+[20-Mar-2021 07:16:31 UTC] PHP Warning:  include(): Failed opening 'sidebar.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home2/compueaz/public_html/adminpanel/home.php on line 29
