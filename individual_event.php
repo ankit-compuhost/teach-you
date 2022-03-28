@@ -136,7 +136,7 @@ include("include/nodirect-access.php");
                 <hr class="w-100 mx-auto"/>
                 <div><p style="font-size:14px;"><i class="fas fa-clock"></i>&nbsp;&nbsp;<b><?= date("M d", strtotime($event['event_start_date'])) ?> - <?= date("M d", strtotime($event['event_end_date'])) ?></b><br>
                         <span style="font-size:11px;">&nbsp;&nbsp;<?= date("M d h:i a", strtotime($event['event_start_date'])) ?> to <?= date("M d h:i a", strtotime($event['event_end_date'])) ?></span></p></div>
-                <div><b><i class="fas fa-user"></i> &nbsp;&nbsp; Posted By Teach You</b></div>
+                <div><b><i class="fas fa-user"></i> &nbsp;&nbsp; Posted By <?= $uploadUserName['user_firstname'].' '.$uploadUserName['user_lastname']; ?></b></div>
                 <div><b><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; <?= $event['event_location']; ?></b></div>
                 <hr class="w-100 mx-auto"/>
                 <div style="font-size:14px;"><b><i class="fas fa-user"></i> &nbsp;&nbsp; <?= $isInterested['total']; ?> Interested</b></div>

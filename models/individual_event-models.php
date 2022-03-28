@@ -36,7 +36,7 @@ function deletePost(int $postId = 0)
 function getEventTotal(int $eventId = 0, string $type = "")
 {
     global $conn;
-    $page_query = "SELECT count(id) as total FROM events_members WHERE event_id='" . mysqli_real_escape_string($conn, $eventId) . "' AND $type=1";
+    $page_query = "SELECT count(id) as total FROM events_members WHERE event_id='" . mysqli_real_escape_string($conn, $eventId) . "' AND $type='1'";
     $result = mysqli_query($conn, $page_query);
 
     return mysqli_fetch_assoc($result);

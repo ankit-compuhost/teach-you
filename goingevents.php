@@ -83,6 +83,8 @@ include("include/nodirect-access.php");
                         <?php
                         if ($allEvents) {
                             foreach ($allEvents as $row) {
+                                $is_interested = checkTableValue("events_members", ["event_id"], ["event_id" => $row['event_id'], "user_id" => $_SESSION['user_id'], "is_interested" => 1]);
+                                $is_going = checkTableValue("events_members", ["event_id"], ["event_id" => $row['event_id'], "user_id" => $_SESSION['user_id'], "is_going" => 1]);
                                 ?>
                                 <div class="col-6 event-card" data-aos="flip-down">
                                     <div class="card mb-3 shadow p-3 mb-5 rounded event-card"
@@ -110,11 +112,11 @@ include("include/nodirect-access.php");
                                                     <div class="text-center ">
                                                         <button onclick="window.location='<?= base_url($page . ".php") . "?event_id=" . $row['event_id']; ?>&event_action=going'"
                                                                 class="btn btn-danger btn-sm rounded-pill going"><i
-                                                                    class="fas fa-hand-paper"></i>&nbsp;Going
+                                                                    class="fas <?= !empty($is_going) ? 'fa-check' : 'fa-hand-paper'; ?>"></i>&nbsp;Going
                                                         </button>&nbsp;
                                                         <button onclick="window.location='<?= base_url($page . ".php") . "?event_id=" . $row['event_id']; ?>&event_action=interested'"
                                                                 class="btn btn-danger btn-sm rounded-pill interested"><i
-                                                                    class="fas fa-user"></i>&nbsp;Interested
+                                                                    class="fas <?= !empty($is_interested) ? 'fa-check' : 'fa-user'; ?>"></i>&nbsp;Interested
                                                         </button>
 
                                                     </div>
