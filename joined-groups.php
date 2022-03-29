@@ -69,18 +69,19 @@ include("include/nodirect-access.php");
                         <?php
                         if (!empty($allGroups)) {
                             foreach ($allGroups as $val) {
+                                $isGroup = getGroupMemberByUserId($val['group_id'], $_SESSION['user_id']);
                                 ?>
                                 <div class="col-lg-3 page-card mb-4">
-                                    <a href="single-group.php" class="page-card-header">
+                                    <a href="group/<?= $val['slug'] . ".php"; ?>" class="page-card-header">
                                         <img class="page-card-img mb-4" src="<?= $val['group_picture']; ?>" alt="<?= $val['group_title']; ?>">
                                         <br/>
                                         <span class="page-card-title"><?= $val['group_title']; ?></span>
                                     </a>
                                     <br/>
                                     <div>
-                                        <a href="#!" type="button"
+                                        <a href="javascript:void(0)" type="button" onclick="window.location='<?= base_url($page . ".php") . "?group_id=" . $val['group_id']; ?>&group_action=joined'"
                                            class="btn btn-danger text-center page-appreciate-btn mt-3"
-                                           data-bs-toggle="tooltip" data-bs-placement="top"><i class="fas fa-check"></i>&nbsp;Joined</a>
+                                           data-bs-toggle="tooltip" data-bs-placement="top"><i class="fas fa-check"></i>&nbsp;<?= !empty($isGroup) ? 'Joined' : 'Join'; ?></a>
                                     </div>
                                 </div>
                                 <?php

@@ -68,19 +68,20 @@ include("include/nodirect-access.php");
                         if (!empty($allPages)) {
                             foreach ($allPages as $row) {
                                 $appreciate = getAppreciateCount($row['page_id']);
+                                $isAppreciate = getPageLikesByUserId($row['page_id'], $_SESSION['user_id']);
                                 ?>
                                 <div class="col-lg-3 page-card mb-4" data-aos="zoom-in" data-aos-duration="700">
-                                    <a href="single-page.php" class="page-card-header">
+                                    <a href="page/<?= $row['slug'] . ".php"; ?>" class="page-card-header">
                                         <img class="page-card-img" src="<?= $row['page_picture']; ?>" alt="<?= $row['page_title']; ?>">
                                         <br/>
                                         <span class="page-card-title"><?= $row['page_title']; ?></span>
                                     </a>
                                     <br/>
-                                    <a href="single-page-likes.php" class="page-card-likes"><?= !empty($appreciate) ? $appreciate['total'] : '0'; ?> Appreciate</a>
+                                    <a href="javascript:void(0)" class="page-card-likes"><?= !empty($appreciate) ? $appreciate['total'] : '0'; ?> Appreciate</a>
                                     <div>
-                                        <a href="#!" type="button"
+                                        <a href="javascript:void(0)" type="button" onclick="window.location='<?= base_url($page . ".php") . "?page_id=" . $row['page_id']; ?>&page_action=appreciate'"
                                            class="btn btn-danger text-center page-appreciate-btn mt-2"
-                                           data-bs-toggle="tooltip" data-bs-placement="top"><i class="fas fa-star"></i>&nbsp;&nbsp;Appreciate</a>
+                                           data-bs-toggle="tooltip" data-bs-placement="top"><i class="<?= !empty($isAppreciate) ? 'fa' : 'far'; ?> fa-star"></i>&nbsp;&nbsp;Appreciate</a>
                                     </div>
                                 </div>
                                 <?php

@@ -20,7 +20,7 @@ if (!empty($_POST['submit'])) {
             $createGroupMembers = [
                 "group_id" => $groupId,
                 "user_id" => $_SESSION['user_id'],
-                "approved" => 1
+                "approved" => 0
             ];
             $groupMembersId = create("groups_members", $createGroupMembers);
             $createGroupAdmins = [

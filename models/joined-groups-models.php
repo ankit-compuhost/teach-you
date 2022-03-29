@@ -1,6 +1,20 @@
 <?php
 include("db.php");
 
+
+/**
+ * @param int $id
+ * @return array|false|string[]|null
+ */
+function getGroupMemberByUserId(int $id = 0, int $userId = 0)
+{
+    global $conn;
+    $query = "SELECT * FROM groups_members WHERE `approved`=1 AND `group_id`='" . mysqli_real_escape_string($conn, $id) . "' AND `user_id`='" . mysqli_real_escape_string($conn, $userId) . "'";
+    $result = mysqli_query($conn, $query);
+
+    return mysqli_fetch_assoc($result);
+}
+
 /**
  * @param int $id
  * @return array|false|string[]|null

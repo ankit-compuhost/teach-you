@@ -2,35 +2,18 @@
 include("db.php");
 
 /**
- * @param int $postId
- */
-function deletePost(int $postId = 0)
-{
-    global $conn;
-
-    $article = getArticleById($postId);
-    @unlink("./" . $article['cover']);
-
-    $page_query = "DELETE FROM posts_articles WHERE post_id='" . mysqli_real_escape_string($conn, $postId) . "'";
-    $result = mysqli_query($conn, $page_query) or die(mysqli_error($conn));
-
-    $page_query = "DELETE FROM posts_articles WHERE post_id='" . mysqli_real_escape_string($conn, $postId) . "'";
-    $result = mysqli_query($conn, $page_query) or die(mysqli_error($conn));
-}
-
-/**
  * @param int $id
- * @param string $type
  * @return array|false|string[]|null
  */
-function getEventsById(int $id = 0, string $type = "")
+function getGroupMemberByUserId(int $id = 0, int $userId = 0)
 {
     global $conn;
-    $query = "SELECT * FROM events WHERE `post_type`='events' AND `event_id`='" . mysqli_real_escape_string($conn, $id) . "' ORDER BY event_id DESC";
+    $query = "SELECT * FROM groups_members WHERE `group_id`='" . mysqli_real_escape_string($conn, $id) . "' AND `user_id`='" . mysqli_real_escape_string($conn, $userId) . "'";
     $result = mysqli_query($conn, $query);
 
     return mysqli_fetch_assoc($result);
 }
+
 
 /**
  * @param int $userId
@@ -39,7 +22,7 @@ function getEventsById(int $id = 0, string $type = "")
 function getAllGroups(int $userId = 0): array
 {
     global $conn;
-    $page_query = "SELECT group_id, group_title, group_picture FROM groups WHERE `group_admin`=".$userId." ORDER BY group_id DESC";
+    $page_query = "SELECT group_id, group_title, group_picture, slug FROM groups WHERE `group_admin`=".$userId." ORDER BY group_id DESC";
     $result = mysqli_query($conn, $page_query);
 
     return mysqli_fetch_all($result, MYSQLI_ASSOC);
