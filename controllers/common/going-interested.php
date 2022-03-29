@@ -15,7 +15,6 @@ if (!empty($_GET['event_action'])) {
             default:
                 break;
         }
-        //echo "<pre>";print_r($checkExists);die;
         if (empty($checkExists)) {
             create("events_members", $eventsMembersPost);
         } else {

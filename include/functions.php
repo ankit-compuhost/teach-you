@@ -93,6 +93,31 @@ function fileUpload(string $path = "", array $file = []): array
 /**
  * @return array
  */
+function getPagesCategories(): array
+{
+    global $conn;
+    $query = "SELECT * FROM pages_categories";
+    $result = mysqli_query($conn, $query);
+
+    return mysqli_fetch_all($result, MYSQLI_ASSOC);
+}
+
+
+/**
+ * @return array
+ */
+function getGroupCategories(): array
+{
+    global $conn;
+    $query = "SELECT * FROM groups_categories";
+    $result = mysqli_query($conn, $query);
+
+    return mysqli_fetch_all($result, MYSQLI_ASSOC);
+}
+
+/**
+ * @return array
+ */
 function getEventsCategories(): array
 {
     global $conn;
@@ -206,6 +231,7 @@ function checkProfilePic(?string $pic = ""): string
  * @param int $userId
  * @return array
  */
+/*
 function getAllPages(int $userId = 0)
 {
     global $conn;
@@ -213,7 +239,7 @@ function getAllPages(int $userId = 0)
     $result = mysqli_query($conn, $page_query);
 
     return mysqli_fetch_all($result, MYSQLI_ASSOC);
-}
+}*/
 
 /**
  * @param int $userId

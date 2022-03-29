@@ -53,7 +53,7 @@
                         <label for="message-text" class="col-form-label">Category</label>
                         <select name="event_category" class="form-select fa"
                                 aria-label=".form-select-lg example">
-                            <option selected>Open this select menu</option>
+                            <option value="">Open this select menu</option>
                             <?php
                             foreach ($category as $val) {
                                 ?>
