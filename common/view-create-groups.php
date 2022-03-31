@@ -6,7 +6,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form action="" method="post">
+                <form action="" method="post" enctype="multipart/form-data">
                     <div class="mb-3">
                         <label for="page-name" class="col-form-label">Name Your Group</label>
                         <input type="text" class="form-control" id="page-name" name="group_title" value="<?= !empty($error) ? $_POST['group_title'] : ""; ?>" >
@@ -37,6 +37,10 @@
                             }
                             ?>
                         </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Group Image</label><br>
+                        <input type="file" name="group_picture">
                     </div>
                     <div class="mb-3">
                         <label for="page-summary" class="col-form-label">Summary</label>

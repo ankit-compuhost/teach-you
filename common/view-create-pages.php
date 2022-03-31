@@ -8,7 +8,7 @@
             </div>
             <div class="modal-body">
                 <?= !empty($error) ? $error : ""; ?>
-                <form action="" method="post">
+                <form action="" method="post" enctype="multipart/form-data">
                     <div class="mb-3">
                         <label for="page-name" class="col-form-label">Name Your Page</label>
                         <input type="text" name="page_title" value="<?= !empty($error) ? $_POST['page_title'] : ""; ?>" class="form-control">
@@ -27,6 +27,10 @@
                             }
                             ?>
                         </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Page Image</label><br>
+                        <input type="file" name="page_picture">
                     </div>
                     <div class="mb-3">
                         <label for="page-summary" class="col-form-label">Summary</label>

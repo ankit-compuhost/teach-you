@@ -43,7 +43,7 @@ include("include/nodirect-access.php");
     </div>
     <a href="single-group.php" class="page-profile-title"><?= $group['group_title']; ?></a>
     <br />
-    <a href="#!" type="button" class="btn btn-danger text-center page-appreciate-btn page-profile-appreciate-btn grp-profile-appreciate-btn mt-1" data-bs-toggle="tooltip" data-bs-placement="top"><i class="fas fa-user-plus"></i>&nbsp;<?= empty($isGroup) ? 'Join' : 'Joined'; ?></a>
+    <a href="#!" type="button" class="btn btn-danger text-center page-appreciate-btn page-profile-appreciate-btn grp-profile-appreciate-btn mt-1" data-bs-toggle="tooltip" data-bs-placement="top"><i class="<?= !empty($isGroup) ? 'fas fa-check' : 'fa fa-users'; ?>"></i>&nbsp;<?= empty($isGroup) ? 'Join' : 'Joined'; ?></a>
     <br />
     <a href="#!" type="button" class="btn btn-danger text-center page-appreciate-btn page-profile-flag-btn grp-profile-flag-btn mt-4" data-bs-toggle="tooltip" data-bs-placement="top"><i class="fas fa-flag"></i></a>
 </div>

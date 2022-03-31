@@ -1,11 +1,11 @@
 <?php
 include("models/" . $page . "-models.php");
-$allGroups = getAllGroups();
+$allGroups = getAllGroups($_SESSION['user_id']);
 
 //Create
-include ("common/create-groups.php");
+include("common/create-groups.php");
 
 //Joined
-include ("common/joined.php");
+include("common/joined.php");
 
 ?>

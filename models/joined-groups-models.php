@@ -9,7 +9,7 @@ include("db.php");
 function getGroupMemberByUserId(int $id = 0, int $userId = 0)
 {
     global $conn;
-    $query = "SELECT * FROM groups_members WHERE `approved`=1 AND `group_id`='" . mysqli_real_escape_string($conn, $id) . "' AND `user_id`='" . mysqli_real_escape_string($conn, $userId) . "'";
+    $query = "SELECT * FROM groups_members WHERE `approved`='1' AND `group_id`='" . mysqli_real_escape_string($conn, $id) . "' AND `user_id`='" . mysqli_real_escape_string($conn, $userId) . "'";
     $result = mysqli_query($conn, $query);
 
     return mysqli_fetch_assoc($result);
@@ -29,12 +29,13 @@ function getGroupsById(int $id = 0)
 }
 
 /**
+ * @param int $userId
  * @return array
  */
-function getAllGroups(): array
+function getAllGroups(int $userId = 0): array
 {
     global $conn;
-    $page_query = "SELECT g.* FROM `groups` as g INNER JOIN groups_members as gm ON g.group_id=gm.group_id GROUP BY g.group_id ORDER BY group_id DESC";
+    $page_query = "SELECT g.* FROM `groups` as g INNER JOIN groups_members as gm ON g.group_id=gm.group_id WHERE gm.user_id='" . $userId . "' AND gm.approved='1' GROUP BY g.group_id ORDER BY group_id DESC";
     $result = mysqli_query($conn, $page_query);
 
     return mysqli_fetch_all($result, MYSQLI_ASSOC);

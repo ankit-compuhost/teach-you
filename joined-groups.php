@@ -81,7 +81,7 @@ include("include/nodirect-access.php");
                                     <div>
                                         <a href="javascript:void(0)" type="button" onclick="window.location='<?= base_url($page . ".php") . "?group_id=" . $val['group_id']; ?>&group_action=joined'"
                                            class="btn btn-danger text-center page-appreciate-btn mt-3"
-                                           data-bs-toggle="tooltip" data-bs-placement="top"><i class="fas fa-check"></i>&nbsp;<?= !empty($isGroup) ? 'Joined' : 'Join'; ?></a>
+                                           data-bs-toggle="tooltip" data-bs-placement="top"><i class="<?= !empty($isGroup) ? 'fas fa-check' : 'fa fa-users'; ?>"></i>&nbsp;<?= !empty($isGroup) ? 'Joined' : 'Join'; ?></a>
                                     </div>
                                 </div>
                                 <?php

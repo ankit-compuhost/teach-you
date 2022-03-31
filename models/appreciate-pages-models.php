@@ -28,12 +28,13 @@ function getAppreciateCount(int $pageId = 0)
 }
 
 /**
+ * @param int $userId
  * @return array
  */
-function getAllPages(): array
+function getAllPages(int $userId = 0): array
 {
     global $conn;
-    $page_query = "SELECT p.* FROM  `pages` as p INNER JOIN `pages_likes` as pl ON p.page_id=pl.page_id GROUP BY p.page_id ORDER BY p.page_id DESC";
+    $page_query = "SELECT p.* FROM  `pages` as p INNER JOIN `pages_likes` as pl ON p.page_id=pl.page_id WHERE pl.user_id='" . $userId . "' GROUP BY p.page_id ORDER BY p.page_id DESC";
     $result = mysqli_query($conn, $page_query);
 
     return mysqli_fetch_all($result, MYSQLI_ASSOC);

@@ -1,6 +1,6 @@
 <?php
 include("models/" . $page . "-models.php");
-$allPages = getAllPages();
+$allPages = getAllPages($_SESSION['user_id']);
 
 //Create
 include ("common/create-pages.php");
