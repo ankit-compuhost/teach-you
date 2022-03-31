@@ -39,7 +39,7 @@ include("include/nodirect-access.php");
 <div class="container-fluid ">
 <div id="page-profile-info" class="grp-profile-info">
     <div class="page-profile-img-border">
-        <img id="page-profile-img" class="page-profile-img" src="<?= $group['group_picture']; ?>" alt="<?= $group['group_title']; ?>">
+        <img id="page-profile-img" class="page-profile-img" src="<?= base_url($group['group_picture']); ?>" alt="<?= $group['group_title']; ?>">
     </div>
     <a href="single-group.php" class="page-profile-title"><?= $group['group_title']; ?></a>
     <br />

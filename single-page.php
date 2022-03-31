@@ -37,7 +37,7 @@ include("include/nodirect-access.php");
 <!-- Main Page Content -->
 <div id="page-profile-info">
     <div class="page-profile-img-border">
-        <img id="page-profile-img" class="page-profile-img" src="<?= $page['page_picture']; ?>" alt="<?= $page['page_title']; ?>">
+        <img id="page-profile-img" class="page-profile-img" src="<?= base_url($page['page_picture']); ?>" alt="<?= $page['page_title']; ?>">
     </div>
     <a href="single-page.php" class="page-profile-title"><?= $page['page_title']; ?></a>
     <br />
